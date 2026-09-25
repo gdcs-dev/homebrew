@@ -14,6 +14,7 @@ class Rbus < Formula
   depends_on "curl"
   depends_on "msgpack-cxx"
   depends_on "liblinenoise"
+  depends_on "cjson"
 
   def install
     system "cmake", "-S", ".", "-B", "build", *std_cmake_args
