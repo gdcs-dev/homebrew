@@ -5,10 +5,10 @@ class RbusElements < Formula
   sha256 ""
   license "Apache-2.0"
   bottle do
-    root_url "https://github.com/gdcs-dev/homebrew/releases/download/rbus-elements-v1.0.4"
-    sha256 cellar: :any, arm64_tahoe: "9985c89bb0dbeb584974176efba1301355ae7d95a28add5d745d42f7fcb7d7cb"
+    root_url "https://github.com/gdcs-dev/homebrew/releases/download/rbus-elements-v1.0.5"
+    sha256 cellar: :any, arm64_tahoe: "ce03d7acc6139a48178399c065dafd21d6d886abfd1f519954ff2dc09c0fc0ea"
   end
-  version "1.0.4"
+  version "1.0.5"
 
   depends_on "cmake" => :build
   depends_on "jansson"
