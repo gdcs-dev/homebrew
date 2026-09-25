@@ -19,6 +19,7 @@ explicitly:
 
 ```bash
 brew tap gdcs-dev/homebrew https://github.com/gdcs-dev/homebrew
+brew trust gdcs-dev/homebrew
 ```
 
 Verify the tap and see what it provides:
