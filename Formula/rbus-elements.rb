@@ -38,7 +38,7 @@ class RbusElements < Formula
     run [opt_bin/"rbus_elements", "#{HOMEBREW_PREFIX}/share/rbus_elements/elements.json"]
     # not using keep_alive so that stop actually terminates the process
     environment_variables RBUS_ELEMENTS_PSM_STATE_PATH: var/"lib/rbus-elements/psm.json",
-                          RBUS_ELEMENTS_PSM_SEED_PATH:  opt_share/"rbus_elements/psm-seed.json"
+                          RBUS_ELEMENTS_PSM_SEED_PATH:  opt_prefix/"share/rbus_elements/psm-seed.json"
     log_path var/"log/rbus_elements.log"
     error_log_path var/"log/rbus_elements.log"
   end

@@ -1,4 +1,4 @@
-class LibwrpC < Formula
+class WrpC < Formula
   desc "C implementation of Web Routing Protocol - runtime"
   homepage "https://github.com/xmidt-org/wrp-c.git"
   url "#{homepage}/archive/v1.1.3.tar.gz"
