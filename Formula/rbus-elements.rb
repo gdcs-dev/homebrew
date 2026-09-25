@@ -12,12 +12,13 @@ class RbusElements < Formula
 
   depends_on "cmake" => :build
   depends_on "jansson"
-  depends_on "msgpack-cxx"
+  depends_on "msgpack"
   depends_on "rbus"
 
   def install
     system "cmake", "-S", ".", "-B", "build",
            "-DRBUS_ELEMENTS_INSTALL_SYSTEM_FILES=OFF",
+           "-DRBUS_ELEMENTS_PSM_STATE_PATH=#{var}/lib/rbus-elements/psm.json",
            *std_cmake_args
     system "cmake", "--build", "build"
     system "cmake", "--install", "build"
